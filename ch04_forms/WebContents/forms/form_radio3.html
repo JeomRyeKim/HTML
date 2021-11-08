@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+        <table>
+            <tr>
+            	<!-- label로 input을 묶어서도 사용 가능 -->
+                <td colspan=2><label>이름
+                	<input id="username" type="text" name="username"></td></label>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><!-- 라디오 버튼을 클릭하기 쉽게 사용 -->
+                    <label><input id="man" type="radio" name="gender" value="m" checked>남자</label><!-- checked : 체크된 상태로 나옴 -->
+                    <label><input id="woman" type="radio" name="gender" value="w">여자</label>
+                </td>
+            </tr>
+            <tr>
+            	<td>매체</td>
+                <td><!-- 매체 radio태그는 name이 같으면 같은 그룹으로 묶임. -->
+                    <label><input id="man" type="radio" name="media" value="email" checked>email</label><!-- checked : 체크된 상태로 나옴 -->
+                    <label><input id="woman" type="radio" name="media" value="sns">sns</label>
+                    <label><input id="woman" type="radio" name="media" value="katok">깨톡</label>
+                    <!-- name이 같아야 그 이름중에서 1개만 선택이 되는것, 이름이 다르면 1개만 선택되는 것이 아니라 여러개가 선택이 됨  -->
+                </td>
+            </tr>
+        </table>  
+        <input type="submit" value="가입"><!-- submit버튼 form내에 있어야함. -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+        <table>
+            <tr>
+            	<!-- 읽기 전송 출력 요소 label for = "id값" -->
+                <td><label for="username">이름</label></td><!-- label : input테이블에 대한 설명용 -->
+                <td><input id="username" type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><!-- 라디오 버튼을 클릭하기 쉽게 사용 -->
+                    <input id="man" type="radio" name="gender" value="m">
+                    <label for="man">남자</label><!-- label에 적힌 "남자" 글자까지 클릭해서 선택되는 범위가 확장됨 -->
+                    <input id="woman" type="radio" name="gender" value="w">
+                    <label for="woman">여자</label>
+                </td>
+            </tr>
+        </table>  
+        <input type="submit" value="가입"><!-- submit버튼 form내에 있어야함. -->
+    </form>
+</body>
+</html>
