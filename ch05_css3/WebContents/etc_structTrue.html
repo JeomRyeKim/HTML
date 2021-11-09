@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/* li별 첫번째 a 태그 */
+/* 	li>a:first-child {color:red;} -> li 전부 red로 나옴 잘못된 방식. */
+	li:first-child > a {color:red;}/* 첫번째 li만 red가 됨. 이게 맞는 방식 */
+</style>
+</head>
+<body>
+<ul>
+	<li><a href="#">주의 사항</a></li>
+	<li><a href="#">주의 사항</a></li>
+	<li><a href="#">주의 사항</a></li>
+	<li><a href="#">주의 사항</a></li>
+	<li><a href="#">주의 사항</a></li>
+	<li><a href="#">주의 사항</a></li>
+</ul>
+</body>
+</html>

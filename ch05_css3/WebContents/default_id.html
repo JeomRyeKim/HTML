@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS# Selector Basic Id</title>
+<style>
+/* margin - 개별적(4개) : top(위) -> right(오른쪽) -> bottom(아래) -> left(왼쪽) 순,
+	1개 : 4개 모두 잡히고, 2개 : 잡으면 마주보고 있는 top,bottom / right,left가 잡히고, 
+	3개 : left가 마주보는 right를 따라감  */
+	#header{width:800px; margin:0 auto 0;/* 위아래 - 0, 좌우 - 자동 : 중간에 위치하게 됨 */ background:red;}
+	#wrap{width:800px; height:450px; margin:0 auto; overflow:hidden;}
+	/* overflow:hidden - 영역 범위보다 내용물이 많으면  : (처리하는 속성)보여줄 수 있는 부분만 보여주고 그 이상을 넘어가면 안 보이게 만듬 */
+	#aside{width:200px; float:left; background:blue;}/* float : 영역을 위로 띄우는 속성(left : 왼쪽 위로 올라감) */
+	#content{width:600px; float:right; background:green;}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>#header 태그</h1>
+	</div>
+	<div id="wrap">
+		<div id="aside">
+			<h1>#aside 태그</h1>
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+			It has roots in a piece of classical Latin literature from 45 BC,
+			 making it over 2000 years old. Richard McClintock,
+			 a Latin professor at Hampden-Sydney College in Virginia,
+			 looked up one of the more obscure Latin words, 
+			 consectetur, from a Lorem Ipsum passage, 
+			 and going through the cites of the word in classical literature, 
+			 discovered the undoubtable source. 
+			Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 
+			 "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+			 by Cicero, written in 45 BC. 
+			This book is a treatise on the theory of ethics,
+			 very popular during the Renaissance. 
+			The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+			 comes from a line in section 1.10.32.</p>
+		</div>
+		<div id="content">
+			<h1>#content 태그</h1>
+		</div>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. 
+			It has roots in a piece of classical Latin literature from 45 BC,
+			 making it over 2000 years old. Richard McClintock,
+			 a Latin professor at Hampden-Sydney College in Virginia,
+			 looked up one of the more obscure Latin words, 
+			 consectetur, from a Lorem Ipsum passage, 
+			 and going through the cites of the word in classical literature, 
+			 discovered the undoubtable source. 
+			Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 
+			 "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+			 by Cicero, written in 45 BC. 
+			This book is a treatise on the theory of ethics,
+			 very popular during the Renaissance. 
+			The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+			 comes from a line in section 1.10.32.
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 basic state </title>
+<style>
+	input:enabled{background:white;}
+	input:disabled{background:gray;}
+	input:focus{background:orange;}
+	input:checked{background:green;}/* <input type="checkbox">이부분에 적용 됨 */
+</style>
+</head>
+<body>
+<h2>사용가능</h2>
+<form>
+	<!-- <input> : enabled로 인해 기본 배경색이 지정됨 -->
+	<!-- <input> : focus로 인해 입력란에 커서로 클릭하면 입력란 칸이 orange로 변함,
+		 마우스를 다른 곳에 클릭하면 원래색으로 돌아옴 -->
+	<input><br>
+	<input type="checkbox"><br>
+	<input type="radio"><br>
+</form>
+<form>
+	<input disabled="disabled"><!-- 입력 안됨 -> 사용 불가, input:disabled로 인해 gray색임. -->
+</form>
+</body>
+</html>
