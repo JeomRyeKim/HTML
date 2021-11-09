@@ -5,9 +5,10 @@
 <title>Insert title here</title>
 <style>
 	h1:hover{color:red;}/* h1에 마우스 커서를 올리면 red로 바뀜 */
-	h1:active{color:blue;}/* input에 입력했던 값들이 입력칸 밑으로 주르륵 뜨는데 그걸 커서로 가져다대면 색이 blue로 변함  */
-	
-	form > input:hover{color:bule;}
+	h1:active{color:blue;}/* h1을 누르면 색이 blue로 바뀜 */
+	/* 만약 <input name="id" value="latte">로 기본값이 설정이 되어 있었다면
+			 latte에 마우스 커서를 올리는 순간 글자 색이 검정색에서 pink로 변함 */
+	form > input:hover{color:pink;}
 </style>
 </head>
 <body>

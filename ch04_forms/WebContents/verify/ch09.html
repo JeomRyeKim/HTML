@@ -5,22 +5,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>글 작성하기</h1><br>
-	
-<table>
-	<label>작성자<input type="text"></label><br>
-	<label>아이디<input type="text"></label><br>
-	<label>이메일<input type="text">@<input type="text"></label><br>
-	<label>휴대폰<select><option>010</option></select>-<input type="text">-<input type="text"></label><br>
-	<label>글제목<input type="text"></label><br>
-	
-	<tr>
-      <td>내용</td>
-      <td><textarea cols=28 rows=8></textarea></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><input type="submit"></td>
-</table>	
+<h1>글 작성하기</h1>	
+<table><!-- 한 행마다 <tr></tr>을 써서 그 안에 <th></th> or <td></td>를 써줘야 함! -->
+ 	<tr><td>작성자</td>
+		<td><input type="text"></td></tr>
+ 	<tr><td>아이디</td>
+		<td><input type="text"></td></tr>
+ 	<tr><td>이메일</td>
+		<td><input type="text">@<input type="text"></td></tr>
+ 	<tr><td>휴대폰</td>
+		<td><select><option>010</option></select>-<input type="text">-<input type="text"></td>	</tr>
+ 	<tr><td>글제목</td>
+		<td><input type="text"></td></tr>
+ 	<tr><td>내용</td>
+		<td><textarea cols=28 rows=8 ></textarea></td></tr>
+
+   <tr></tr>
+   <tr><td><input type="submit"></td></tr>
+</table>
 </body>
 </html>
